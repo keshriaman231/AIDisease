@@ -1,9 +1,0 @@
-{
-  "build": {
-    "env": {
-      "PYTHON_VERSION": "3.11"
-    },
-    "command": "pip install -r backend/requirements.txt"
-  },
-  "start": "cd backend && python app.py"
-}
