@@ -8,6 +8,7 @@ import os
 app = Flask(__name__)
 
 # Load model and preprocessors
+model_path = os.path.join("model", "disease_model.h5")
 model = tf.keras.models.load_model("model/disease_model.h5")
 scaler = joblib.load("model/scaler.pkl")
 label_encoder = joblib.load("model/label_encoder.pkl")
@@ -40,4 +41,5 @@ def predict():
         return jsonify({"error": str(e)})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host="0.0.0.0", port=port)

@@ -1,7 +1,7 @@
 __pycache__/
 *.pyc
-*.pkl
-*.h5
+# *.pkl
+# *.h5
 uploads/
 .DS_Store
 .env
