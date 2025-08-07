@@ -1,0 +1,38 @@
+<--------------- # DL Model <-> AI Agent directory ----------------->
+
+ai-disease-detection/
+│
+├── backend/
+│   ├── app.py                    # Flask main app
+│   ├── model/
+│   │   ├── disease_model.h5       # DL model (from Colab)
+│   │   ├── scaler.pkl             # Scaler (from Colab)
+│   │   ├── features.json          # Feature list (from Colab)
+│   │   ├── label_encoder.pkl      # Label encoder (from Colab)
+│   │   ├── predict.py             # Prediction function
+│   │   ├── preprocess.py          # Preprocessing uploaded data
+│   ├── utils.py                   # Utilities (optional)
+│   ├── config.py                  # MongoDB DB config
+|   ├── test_mongo.py              # Mongo DB Atlas Connection (#MONGO URI Generation)
+│   ├── requirements.txt           # Backend dependencies
+│   └── database/
+│       ├── db.py                  # Database functions
+│
+├── frontend/
+│   ├── streamlit_app.py           # Streamlit app
+│   ├── requirements.txt           # Frontend dependencies
+│   
+│
+│
+├── colab_training/
+│   ├── train_model.ipynb    # DL training notebook
+│   ├── data/
+|       ├── Training.csv
+│       ├── Testing.csv
+│
+├──agent.py                        # fetching backend data 
+├──streamlit_chat_app.py           # Web-based Agent by streamlit
+├── README.md                      # Project documentation
+├── .gitignore                     # Ignore unnecessary files
+
+
