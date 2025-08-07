@@ -1,6 +1,6 @@
-<--------------- # DL Model <-> AI Agent directory ----------------->
+<--------------- DL Model  ----------------->
 
-ai-disease-detection/
+ai-disease/
 │
 ├── backend/
 │   ├── app.py                    # Flask main app
@@ -30,8 +30,6 @@ ai-disease-detection/
 |       ├── Training.csv
 │       ├── Testing.csv
 │
-├──agent.py                        # fetching backend data 
-├──streamlit_chat_app.py           # Web-based Agent by streamlit
 ├── README.md                      # Project documentation
 ├── .gitignore                     # Ignore unnecessary files
 
